@@ -804,7 +804,7 @@ class _HeaderControlState extends State<HeaderControl> {
                           },
                           dense: true,
                           // 可能包含会员解锁画质
-                          enabled: i >= totalQaSam - userfulQaSam,
+                          enabled: true,
                           contentPadding:
                               const EdgeInsets.only(left: 20, right: 20),
                           title: Text(videoFormat[i].newDesc!),
