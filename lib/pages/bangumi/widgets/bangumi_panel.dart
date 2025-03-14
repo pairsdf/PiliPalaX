@@ -43,10 +43,7 @@ class _BangumiPanelState extends State<BangumiPanel> {
     cid = widget.cid!;
     currentIndex = widget.pages.indexWhere((e) => e.cid == cid);
     scrollToIndex();
-    userInfo = userInfoCache.get('userInfoCache');
-    if (userInfo != null) {
-      vipStatus = userInfo.vipStatus;
-    }
+    vipStatus = 1;
     videoDetailCtr = Get.find<VideoDetailController>(tag: heroTag);
 
     videoDetailCtr.cid.listen((int p0) {
